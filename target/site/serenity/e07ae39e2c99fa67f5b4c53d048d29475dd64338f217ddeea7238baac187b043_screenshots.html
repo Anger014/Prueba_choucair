@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="fb36e34d32c7f7cccf1656b78707444443e59b33cf6acee6785dc31fb3f3dd4d.html">Login On Utest</a></span>
+                > <span class="truncate-60"><a
+                    href="e07ae39e2c99fa67f5b4c53d048d29475dd64338f217ddeea7238baac187b043.html">Try to login in that website </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-05-2021 16:19</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Login On Utest </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                I'm a new user and i want to login in Utest website
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="ff1312023d39bfe017bf1cfa7eee688f5343ffeb07241e1c0d6e56a450ede02c.html">
+                                    (scenario)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="5b60049dabe2d996e53915e94db0790feadbfbfc080a64f819413f137b52ef58.html">Story1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Try to login in that website
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="5b2bbf3829ed701b13828d8fd0462cd04d375992479759644354b292c3e33191.png" title=" Given than anyer wants to join at Utest" width="1366"/>
+                <img src="5b2bbf3829ed701b13828d8fd0462cd04d375992479759644354b292c3e33191.png" title=" Anyer open firts page" width="1366"/>
+                <img src="5b2bbf3829ed701b13828d8fd0462cd04d375992479759644354b292c3e33191.png" title=" Anyer opens the Utest page" width="1366"/>
+                <img src="5b2bbf3829ed701b13828d8fd0462cd04d375992479759644354b292c3e33191.png" title=" Anyer open firts page (completed)" width="1366"/>
+                <img src="91f4f5974f2b1d45881298d0129b464d27866a33474ff146c11bf8f4505045e8.png" title=" Anyer login" width="1366"/>
+                <img src="91f4f5974f2b1d45881298d0129b464d27866a33474ff146c11bf8f4505045e8.png" title=" Anyer clicks on Button to join Utest form" width="1366"/>
+                <img src="637c23a62c433c215ac94630f742f0fa9b5f51eb6f1d6e84205b2a5bf7b9ad1a.png" title=" Anyer enters 'anyer smith' into Input for name" width="1366"/>
+                <img src="eb333fe96e46cc5a5bce8de3310ebe27a868999ab4d8433c1d5ac812ce612d9e.png" title=" Anyer enters 'Contreras Velez' into Input for last_name" width="1366"/>
+                <img src="fd9a916654346de065df9cff117a0425f17f788cc549e12f95882653fd9c9343.png" title=" Anyer enters 'anger011@gmail.com' into Input for email" width="1366"/>
+                <img src="0d769f59fcf551c0d09018a7ebe5cc9b6951ea87ace3ac54a5a80e645ff7bcca.png" title=" Anyer select June on List to select month" width="1366"/>
+                <img src="c3ab7144f5e03417a01245e7bcbdda07a0571f0ffdb82fdf2e318bd1f7408778.png" title=" Anyer select 2 on List to select day" width="1366"/>
+                <img src="048855076bbf2881ccfaaf2886198ec2f926ed043230714cf9fba14ce68a7916.png" title=" Anyer select 1994 on List to select year" width="1366"/>
+                <img src="d71ee8a3a678758eee4abb0a8ce8004617da7c0e4acbfd67951085607b6000d1.png" title=" Anyer clicks on Button to go location form" width="1366"/>
+                <img src="ead902756cc0022671674b5cc94cfaef99d72660f5804772cb97601d1934f25e.png" title=" Anyer types 'ENTER' in Input for city" width="1366"/>
+                <img src="8f4ec2d083e343f5056b5adab96f8fe330d2eb0a14052e777b94eb28078efce7.png" title=" Anyer enters '050012' into Input for zip" width="1366"/>
+                <img src="cbdb24cee75d9a6bfba956c9e5edca02ec84adada30edd9dcaee5d3e36a9315a.png" title=" Anyer clicks on button to go devices form" width="1366"/>
+                <img src="2c6659b0767bd3d28442df264bea97dd670c9da7877cbaee382a09c94214e41c.png" title=" Anyer types 'ENTER' in search device os" width="1366"/>
+                <img src="022ec33aec619272ba8abf5f63a553ca0d3cddcd7029eb8cc8ebcff5ab531ea9.png" title=" Anyer types 'ENTER' in Search device version" width="1366"/>
+                <img src="fced91cbd2f8a11e8a1cd8dc7d12b668f2257cfa92d3cc960b7004fbf25d2336.png" title=" Anyer types 'ENTER' in Search device language" width="1366"/>
+                <img src="e5bd54e574b7a91f21d44342656fb12ad6c234f6b117516bcdb41338fb32e487.png" title=" Anyer clicks on button to go last form" width="1366"/>
+                <img src="98cbe58071c0c6ad9cbbc2237d2384f2ddab434a3b6ba0c3dafb02b3ebc7f371.png" title=" Anyer enters 'Angersito312' into Input for PASS" width="1366"/>
+                <img src="b75d7c89c82baae1f1998d6da037d95bc69821ffa9340dd6a78eaded2cf1fdb9.png" title=" Anyer enters 'Angersito312' into Input TO CONFIRM PASS" width="1366"/>
+                <img src="ada33c18c1309b48478ffe6e06846dbc50367857168b69bcbef9ba9197e6d284.png" title=" Anyer clicks on Check to confirm terms" width="1366"/>
+                <img src="77e098762055e8d3ad218ab4ba64aa35f7598e134e51f54b9e615911bc1ba1d8.png" title=" Anyer clicks on Check to confirm privacy" width="1366"/>
+                <img src="c8d9b029f6e6fd7485cfd73a43abd4368f805170e358c954bbb74a51b4b35796.png" title=" Anyer clicks on button to go complete form" width="1366"/>
+                <img src="c8d9b029f6e6fd7485cfd73a43abd4368f805170e358c954bbb74a51b4b35796.png" title=" Anyer login (completed)" width="1366"/>
+                <img src="c8d9b029f6e6fd7485cfd73a43abd4368f805170e358c954bbb74a51b4b35796.png" title=" Given than anyer wants to join at Utest (completed)" width="1366"/>
+                <img src="738a8f09ef3174de0b0ee8a5bf93a9646436584821e8792d7bb9ed70bb173e34.png" title=" When See what i will do there" width="1366"/>
+                <img src="738a8f09ef3174de0b0ee8a5bf93a9646436584821e8792d7bb9ed70bb173e34.png" title=" Anyer sig in" width="1366"/>
+                <img src="738a8f09ef3174de0b0ee8a5bf93a9646436584821e8792d7bb9ed70bb173e34.png" title=" Anyer opens the Utest sig in page" width="1366"/>
+                <img src="738a8f09ef3174de0b0ee8a5bf93a9646436584821e8792d7bb9ed70bb173e34.png" title=" Anyer sig in (completed)" width="1366"/>
+                <img src="738a8f09ef3174de0b0ee8a5bf93a9646436584821e8792d7bb9ed70bb173e34.png" title=" Anyer utest sig in" width="1366"/>
+                <img src="ae3ebfe9bd7e37018d082fccfaa125a46b6378480566678a5f39d4b7d3f3dffc.png" title=" Anyer sing" width="1366"/>
+                <img src="ae3ebfe9bd7e37018d082fccfaa125a46b6378480566678a5f39d4b7d3f3dffc.png" title=" Anyer enters 'Anger014@gmail.com' into Input to add username" width="1366"/>
+                <img src="f9921a9b3e4f0881bfde1b2802629e5f19ea845e2791fa67e767891b1666fc7e.png" title=" Anyer enters 'Angersito312' into Input to add password" width="1366"/>
+                <img src="332c748f41f3dcf5f2e290dadf7d8122ac77859779813dc46a12d6628a722535.png" title=" Anyer clicks on CHECK REMEMBER ME" width="1366"/>
+                <img src="883144371e3302a4011d2e0a98c39ce5b1264d61fcabed9ee0a5f80bfd305b07.png" title=" Anyer clicks on SUBMIT" width="1366"/>
+                <img src="883144371e3302a4011d2e0a98c39ce5b1264d61fcabed9ee0a5f80bfd305b07.png" title=" Anyer sing (completed)" width="1366"/>
+                <img src="883144371e3302a4011d2e0a98c39ce5b1264d61fcabed9ee0a5f80bfd305b07.png" title=" When See what i will do there (completed)" width="1366"/>
+                <img src="883144371e3302a4011d2e0a98c39ce5b1264d61fcabed9ee0a5f80bfd305b07.png" title=" Then find something: <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>

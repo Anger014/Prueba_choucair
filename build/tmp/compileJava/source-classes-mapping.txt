@@ -1,0 +1,18 @@
+tasks/SigIn.java
+ tasks.SigIn
+userinterface/UtestLoginPage.java
+ userinterface.UtestLoginPage
+tasks/Sing.java
+ tasks.Sing
+tasks/OpenFirtsPage.java
+ tasks.OpenFirtsPage
+userinterface/UtestPage.java
+ userinterface.UtestPage
+userinterface/UtestSigInPage.java
+ userinterface.UtestSigInPage
+userinterface/UtestSigIn.java
+ userinterface.UtestSigIn
+userinterface/SingInterface.java
+ userinterface.SingInterface
+tasks/Login.java
+ tasks.Login
